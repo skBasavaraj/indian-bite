@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Indian bite</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="non_veg">Non Veg Videos</string>
+    <string name="veg">Veg Videos</string>
+</resources>

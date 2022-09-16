@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.bsk.indianbite.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_vegFragment3"
+            app:destination="@id/vegFragment3" />
+        <action
+            android:id="@+id/action_homeFragment_to_nonVegFragment"
+            app:destination="@id/nonVegFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/vegFragment3"
+        android:name="com.bsk.indianbite.fragments.VegFragment"
+        android:label="fragment_veg"
+        tools:layout="@layout/fragment_veg" >
+        <action
+            android:id="@+id/action_vegFragment3_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nonVegFragment"
+        android:name="com.bsk.indianbite.fragments.NonVegFragment"
+        android:label="fragment_non_veg"
+        tools:layout="@layout/nonVeg" >
+        <action
+            android:id="@+id/action_nonVegFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+</navigation>
